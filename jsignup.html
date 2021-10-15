@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>tsignup</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+       .imgcontainer{
+  width:50%;
+    height:300%;
+  }
+  body {font-family:sans-serif;
+  background-color:#0f1142;}
+  .nav {
+  padding:1%;
+  background-color:#0f1142;
+  min-height:5px;
+  
+}
+.nav {
+  padding:1%;
+  background-color:#0f1142;
+  min-height:5px;
+  
+}
+.navbar{
+ background-color:#0f1142;
+ }
+ .navbar-default {
+    background-color: #0f1142;
+    border-color:white;
+	}
+	.navbar {
+    box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
+}
+  body {font-family: sans-serif;}
+
+input[type=text], input[type=password] {
+    width: 30%;
+    padding: 15px;
+    margin: 10px 0 10px 0;
+    display: inline-block;
+    background: #0f1142;
+}
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+button {
+    background-color:#ddd;
+    color: black;
+    padding: 14px 20px;
+	margin:8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity:1;
+    background-color: cadetblue;
+        color:chartreuse;
+}
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #ddd;
+}
+
+.cancelbtn, .signupbtn {
+  float: center;
+  width: 10%;
+  
+}
+.container-fluid{
+	text-align:center;
+}
+.navbar {
+    box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
+
+    
+}
+
+  </style>
+</head>
+<body>
+    
+<nav class="navbar navbar-default navbar-fixed-top" style="background-color:#0f1142;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="jhome.html"><img class="imgcontainer" src="jlogo.jpg" height="100"></a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      
+      <li><a href="jlogin.html" style="color:#ddd;"><span class="glyphicon glyphicon-log-in" style="color:#ddd;"></span> Login</a></li>
+        <li class="active"><a href="jsignup.html" style="color:#0f1142; background-color:#ddd;" ><span class="glyphicon glyphicon-user" style="color:black;"></span> Sign Up</a></li>
+    </ul>
+  </div>
+</nav>
+    <br><br><br><br><br><br>
+    
+    
+<div class="container-fluid">
+    <h2 style="text-align:center;color:#ddd"><b>Create an account</b></h2>
+    <form method="post" action="jsignup.html">
+    <br>
+
+	<label for="username"></label>
+	<input type="text" placeholder="Enter Username" name="username">
+	<br>
+    
+		<label for="phone"></label>
+	<input type="text" placeholder="Enter phone number" name="phone">
+	<br>
+    <label for="email"></label>
+    <input type="text" placeholder="Enter Email" name="email">
+    <br>
+	
+    <label for="password1"></label>
+    <input type="password" placeholder="Enter Password" name="password1">
+    <br>
+    <label for="password2"></label>
+    <input type="password" placeholder="Confirm Password" name="password2">
+    <br>
+	<label for="answer" style="color:#ddd"> 
+    Please select a secret question and enter an answer. (required) 
+</label> 
+
+<br /> 
+
+<select style="background-color:#0f1142;color:#ddd"> 
+    <option value="0">first school name?</option> 
+    <option value="1">your vehicle number?</option> 
+    <option value="2">what was your childhood nick name?</option> 
+</select> 
+<br>
+
+<input style="background-color:#0f1142" 
+       name="answer"
+       type="text"  
+       size="60" 
+       maxlength="60" /> 
+
+    
+    <p style="color:#ddd">By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+    <div class="clearfix">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <button type="submit" class="signupbtn" name="reg_user">Sign Up</button>
+    </div>
+ 
+</form>
+ </div>
+</body>
+</html>
